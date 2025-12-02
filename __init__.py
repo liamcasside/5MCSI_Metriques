@@ -40,6 +40,10 @@ def commits():
 
     return jsonify(results=results)
 
+@app.route("/commits_graph/")
+def commits_graph():
+    return render_template("commits_graph.html")
+
 
 @app.route("/histogramme/")
 def histo():
